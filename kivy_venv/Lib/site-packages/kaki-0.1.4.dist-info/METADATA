@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: kaki
+Version: 0.1.4
+Summary: Kivy application library on steroids
+Home-page: https://github.com/tito/kaki
+Author: Mathieu Virbel
+Author-email: mat@meltingrocks.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/tito/kaki/issues
+Project-URL: Source, https://github.com/tito/kaki/
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: kivy
+Requires-Dist: watchdog
+Requires-Dist: monotonic
+
+# Kaki - Advanced application library for Kivy
+
+(work in progress)
+
+This library enhance Kivy frameworks with opiniated features such as:
+
+- Auto reloading kv or py (`watchdog` required, limited to some uses cases)
+- Idle detection support
+
+## WIP
+
+- State management
+- API (easy class to communicate with external api, download medias, etc)
+- Better logger (based on `logbook`)
+- Additionnal widgets (`ProgressSpinner`, `SwitchContainer`, `CoverImage`)
+
+
