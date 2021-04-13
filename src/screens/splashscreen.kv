@@ -1,0 +1,31 @@
+#:import utils kivy.utils
+#:import * kivy.graphics
+#:include SplashScreen splashscreen.SplashScreen
+
+<MDRaisedButton>
+    size:
+    hint_text:
+
+<SplashScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        canvas:
+            Color:
+                rgba: (1, 1, 1, 1) #image opacity
+            Rectangle:
+                size: self.size
+                source: 'assets/img/splash.jpg'
+
+    # Action towidget to call it for welcomescreen
+    # BoxLayout:
+    #     orientation: 'vertical'
+    #     border_radius: [100]
+    #     canvas.before:
+    #         Color: 
+    #             rgb: utils.get_color_from_hex('#FBFBFB')
+    #         Rectangle:
+    #             size: (1000,300)
+
+
+
+                
