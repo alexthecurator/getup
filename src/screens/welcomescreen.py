@@ -1,9 +1,8 @@
 # from kivy.uix.screenmanager import Screen
 from kivymd.app import MDApp
 from kivymd.uix.screen import MDScreen
-from kivy.uix.widget import Widget 
 
-class SplashScreen(MDScreen):
+class WelcomeScreen(MDScreen):
     pass
 
 

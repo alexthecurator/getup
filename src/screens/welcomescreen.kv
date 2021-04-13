@@ -1,0 +1,70 @@
+<WelcomeScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        canvas:
+            Color:
+                rgba: (1, 1, 1, 1) #image opacity
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                source: 'assets/img/welcome.jpg'
+    BoxLayout:
+        orientation: 'vertical'
+        canvas.before:
+            Color: 
+                rgb: utils.get_color_from_hex('#FBFBFB')
+            RoundedRectangle:
+                size: (411,360)
+                pos: self.pos
+                radius: [200,200,0,0]
+    BoxLayout: # : Ghost Eclipse
+        orientation: 'vertical'
+        border_radius: [80]
+        canvas.before:
+            Color: 
+                rgba: (251, 251, 251, .1)
+            RoundedRectangle:
+                size: (411,380)
+                pos: self.pos
+                radius: [200,200,0,0]            
+        BoxLayout:
+            orientation: 'vertical'
+            pos: (1,1)
+            spacing: 22
+            FloatLayout:
+                orientation: 'vertical'
+                MDFillRoundFlatButton: #loginbtn
+                    size_hint_x: .32
+                    size_hint_y: .06
+                    text: 'Login'
+                    font_size: 16
+                    pos_hint: {'center_x': .5 , 'center_y': .3 }
+                    md_bg_color: utils.get_color_from_hex('#342BAD')
+                    
+                MDTextButton: #loginbtn
+                    size: (200,60)
+                    text: 'Sign up'
+                    font_size: 28
+                    font_weight: 800
+                    font_name: 'Roboto'
+                    pos_hint: {'center_x': .5 , 'center_y': .2 }
+                    color: utils.get_color_from_hex('#342BAD')
+                MDFillRoundFlatIconButton: #loginbtn
+                    size: (40,40)
+                    icon: 'help'
+                    font_size: 16
+                    pos_hint: {'center_x': .08 , 'center_y': .06 }
+                    md_bg_color: utils.get_color_from_hex('#342BAD')
+                BoxLayout: 
+                    orientation: 'vertical'
+                    size: self.size
+                    pos: (1,1)
+                    padding: 18 
+                    MDTextButton: #loginbtn
+                        text: 'By continuing you agree to "Get" Terms\nof Service and Privacy Policy'
+                        halign: 'center'
+                        font_size: 10
+                        font_weight: 800
+                        font_name: 'Roboto'
+                        pos_hint: {'center_x': .5 , 'center_y': .2 }
+                        color: utils.get_color_from_hex('#342BAD')
